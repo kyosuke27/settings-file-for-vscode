@@ -1,0 +1,33 @@
+{
+    "workspaceExplorer.workspaceStorageDirectory": "/Users/kyosuke/Source/workspace",
+    "vim.insertModeKeyBindings": [
+        {
+          "before": ["j", "k"],
+          "after": ["<ESC>"]
+        },
+    ],
+    "workbench.colorTheme": "Better Solarized Dark",
+    "workbench.iconTheme": "material-icon-theme",
+    "[ruby]": {
+      "editor.defaultFormatter": "Shopify.ruby-lsp",
+      "editor.formatOnSave": true,
+      "editor.formatOnType": true,
+      "editor.tabSize": 2,
+      "editor.insertSpaces": true,
+      "files.trimTrailingWhitespace": true,
+      "files.insertFinalNewline": true,
+      "files.trimFinalNewlines": true,
+      "editor.rulers": [
+        120
+      ],
+      "editor.semanticHighlighting.enabled": true
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.showSuggestionsAsSnippets": true,
+    "emmet.includeLanguages": {
+      "html.erb": "html"
+    },
+    "files.associations": {
+      "*.html.erb":"html"
+    }
+}
