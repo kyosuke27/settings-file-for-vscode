@@ -1,4 +1,9 @@
 {
+    //basic setting
+    "workbench.colorCustomizations":{
+      "tab.activeBorder": "#fff",
+      "tab.inactiveForeground": "#999"
+    },
     "workspaceExplorer.workspaceStorageDirectory": "/Users/kyosuke/Source/workspace",
     "vim.insertModeKeyBindings": [
         {
@@ -22,6 +27,10 @@
       ],
       "editor.semanticHighlighting.enabled": true
     },
+    "[erb]": {
+      "editor.defaultFormatter": "aliariff.vscode-erb-beautify"
+    },
+    "vscode-erb-beautify.useBundler": true,
     "emmet.triggerExpansionOnTab": true,
     "emmet.showSuggestionsAsSnippets": true,
     "emmet.includeLanguages": {
@@ -29,5 +38,24 @@
     },
     "files.associations": {
       "*.html.erb":"html"
-    }
+    },
+    //vim settings
+    "vim.leader":"<space>",
+    //nnoremap
+    "vim.normalModeKeyBindings":[
+      // move windows
+      {"before": ["<Leader>", "h"], "after": ["C-w","h"]},
+      {"before": ["<Leader>", "j"], "after": ["C-w","j"]},
+      {"before": ["<Leader>", "k"], "after": ["C-w","k"]},
+      {"before": ["<Leader>", "l"], "after": ["C-w","l"]},
+      //split s,v
+      {"before": ["<Leader>", "s"], "commands": [":split"]},
+      {"before": ["<Leader>", "v"], "commands": [":vsplit"]},
+      // tab
+      //next
+      {"before": ["<Leader>", "n"], "after": ["g","t"]},
+      //prev
+      {"before": ["<Leader>", "p"], "after": ["g","T"]},
+    ],
+    "liveServer.settings.donotShowInfoMsg": true,
 }
