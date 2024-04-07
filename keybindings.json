@@ -29,8 +29,14 @@
         "when": "vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert'"
     },
     {
-    "key": "shift+space t",
-    "command": "workbench.action.terminal.toggleTerminal",
-    "when": "vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert'"
+        "key": "shift+space t",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert'"
+    },
+    // editorにフォーカスする
+    {
+        "key": "shift+space p",
+        "command": "workbench.action.focusFirstEditorGroup",
+        "when": "vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert'"
     },
 ]
