@@ -1,0 +1,36 @@
+// 既定値を上書きするには、このファイル内にキー バインドを挿入します
+[
+    //basic
+      //explorer表示
+    {
+        "key": "shift+space shift+e",
+        "command": "workbench.view.explorer"
+    },
+    {
+        "key": "shift+space e",
+        "command": "workbench.view.explorer"
+    },
+    //create new file
+    {
+        "key": "n",
+        "command": "explorer.newFile",
+        "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+    },
+    // create new directory
+    {
+        "key": "f",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletFocus && explorerViewletVisible && !inputFocus"
+    },
+    //terminalの設定を変更
+    {
+        "key": "shift+space shift+t",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert'"
+    },
+    {
+    "key": "shift+space t",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "vim.mode != 'SearchInProgressMode' && vim.mode != 'Insert'"
+    },
+]
