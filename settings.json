@@ -56,6 +56,18 @@
       {"before": ["<Leader>", "n"], "after": ["g","t"]},
       //prev
       {"before": ["<Leader>", "p"], "after": ["g","T"]},
+      // optn command palet
+      {
+        "before":["<Leader>",";"],
+        "commands":[{"command":"workbench.action.quickOpen"}]
+      }
+    ],
+    //visual mode  keybindings
+    "vim.visualModeKeyBindings": [
+      {
+        "before":["<Leader>",";"],
+        "commands":[{"command":"workbench.action.quickOpen"}]
+      }
     ],
     "liveServer.settings.donotShowInfoMsg": true,
 }
